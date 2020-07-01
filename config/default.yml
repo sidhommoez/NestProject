@@ -1,0 +1,15 @@
+server:
+  port: 3000
+
+db: 
+  type: 'postgres'
+  port: 5432
+  database: 'taskmanagement'
+
+jwt:
+  expiresIn: 3600
+  
+stripe:
+  success_url: 'http://localhost:4200/success?session_id={CHECKOUT_SESSION_ID}'
+  cancel_url: 'http://localhost:4200/cancel'
+  secret_key: 'sk_test_51GtHfdLa9RwQp921nIyc9JE9RqavcXtbGjmcWKMlD3UqVMXvbeorZFryUjnbSmCL6Ba6VZmdMXD1dLYGhuaK8Tgm00sUgPd2vy'
